@@ -2,34 +2,30 @@
 The project aims to utilize Electroencephalography (EEG) to monitor, analyze, and interpret brainwave activity for applications in neuroscience, mental health, and human-computer interaction. 
 # Hardware indeed
 
-1. Elecrodes
-   
-    Dry Electrodes: Easier to use, no gel needed, but less sensitive.
-   
-    Wet Electrodes: Require conductive gel, generally more accurate.
-   
-  
-3. Amplifiers
+1. Electrodes
 
-    EEG signals are very weak (~μV range) , low-noise amplifiers to boost the signal are required.
-   
-  
-5. Filters
+     Dry electrodes are easier to use, while wet electrodes require gel but provide more accuracy.
 
-   To remove noise (e.g., 50/60 Hz power line interference), you'll need bandpass filters to isolate the EEG frequency bands
+2. Amplifiers
 
-  
-6. Analog-to-Digital Converter (ADC)
+     EEG signals are very weak (~μV range); low-noise amplifiers are needed to boost the signal.
 
-   EEG signals are analog, so you'll need an ADC to convert them into digital form for processing.
+3. Filters
 
-  
-7. Microcontroller or Single-Board Computer
-  
-   ESP32: For embedded systems.
-   
-  
-8. Power Supply
+     To remove noise (e.g., 50/60 Hz power line interference), bandpass filters are required.
 
-   Stable power source to avoid introducing noise into the system.
-   
+4. Analog-to-Digital Converter (ADC)
+
+     EEG signals are analog, so an ADC is necessary to convert them into digital form for proces  sing.
+
+5. Microcontroller or Single-Board Computer
+
+     ESP32 is used for embedded systems.
+
+6. Power Supply
+
+     A stable power source is essential to avoid introducing noise into the system.
+
+# Software
+
+TBA
