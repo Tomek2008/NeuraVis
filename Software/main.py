@@ -1,1 +1,1 @@
-{\rtf1}
+print("Hello World!")
