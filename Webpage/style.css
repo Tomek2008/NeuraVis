@@ -1,0 +1,172 @@
+/* Ogólne style */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+/* Pasek nawigacyjny */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 90px;
+    transition: top 0.3s ease-in-out;
+}
+
+.logo img {
+    height: 100px;
+    margin-left: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, sans-serif; /* Standardowa czcionka Arial */
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase; /* Zmieniamy na wielkie litery */
+    letter-spacing: 2px; /* Przestrzenie między literami */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d1ff; /* Kolor zmienia się przy hover */
+}
+
+/* Tło i sekcje */
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.background-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Styl tekstów */
+.text-block {
+    max-width: 40%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Animacja dla dynamicznych obrazów (image1, image2, image3) */
+.dynamic-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    animation: zoomMove 15s infinite alternate ease-in-out;
+}
+
+/* Animacja powiększania, pomniejszania i przesuwania */
+@keyframes zoomMove {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translate(-30%, -30%) scale(1.2);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(0%, 0%) scale(1.5);
+        opacity: 0.8;
+    }
+    75% {
+        transform: translate(30%, 30%) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(50%, 50%) scale(1);
+        opacity: 0.8;
+    }
+}
+
+/* Styl nagłówka z animacją i cieniem - zmiana czcionki */
+.custom-title {
+    font-family: 'Roboto', sans-serif; /* Zmieniamy czcionkę na 'Roboto' lub inną preferowaną */
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase; /* Duże litery */
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.8), 0 1px 0 rgba(0, 0, 0, 0.6); /* Cień */
+    opacity: 1;
+    visibility: inherit;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Klasa animacji */
+.custom-title.animate {
+    opacity: 0;
+    transform: translate3d(0px, 20px, 0px);
+    visibility: hidden;
+}
+
+.custom-title.animate.visible {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    visibility: visible;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    padding: 20px;
+    font-size: 0.9rem;
+}
