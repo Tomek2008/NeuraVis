@@ -1,14 +1,14 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
-import random
+
 
 DATA_FILE = "data.txt"
 
 signals = ["Alfa_0", "Alfa_1", "Alfa_2", "Beta_0", "Beta_1", "Beta_2", "Gamma_0", "Gamma_1", "Eta_0", "Eta_1"]
 
-fixed_signals = random.sample(fruits, k=10)
 
+fixed_signals = signals[0:]
 def read_data():
     try:
         with open(DATA_FILE, "r") as file:
