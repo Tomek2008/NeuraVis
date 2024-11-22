@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuraVis - Projekt EEG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Link wokół logo, który przenosi do strony głównej -->
+            <a href="index.html">
+                <img src="assets/logo.png" class="logo" />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <!-- Linki do nowych podstron -->
+                <li><a href="informacje.html">O projekcie</a></li>
+                <li><a href="zastosowanie.html">Jak działa</a></li>
+                <li><a href="korzysci.html">Korzyści</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sekcja wstępna -->
+        <section id="intro">
+            <div class="background-video">
+                <video src="assets/video1.mp4" autoplay loop muted class="background"></video>
+            </div>
+            <div class="text-block">
+                <h1 class="animate shadowed custom-title">
+                    NeuraVis - <span class="move-text">Krok w przyszłość</span>
+                </h1>
+                <!-- Link prowadzący do podstrony z informacjami -->
+                <a href="informacje.html" class="btn">Zobacz</a>
+            </div>
+        </section>
+
+        <!-- Sekcja działania -->
+        <section id="dzialanie">
+            <div class="background-video">
+                <img src="assets/bg1.jpg" alt="Background Image" class="background" />
+            </div>
+            <div class="text-block">
+                <h2 class="animate shadowed custom-title">Jak działa NeuraVis?</h2>
+                <!-- Link prowadzący do podstrony z zastosowaniem -->
+                <a href="zastosowanie.html" class="btn">Zobacz</a>
+            </div>
+        </section>
+
+        <!-- Sekcja korzyści -->
+        <section id="korzysci">
+            <div class="background-video">
+                <img src="assets/bg2.jpg" alt="Background Image" class="background" />
+            </div>
+            <div class="text-block">
+                <h2 class="animate shadowed custom-title">Korzyści z zastosowania</h2>
+                <!-- Link prowadzący do podstrony z korzyściami -->
+                <a href="korzysci.html" class="btn">Zobacz</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NeuraVis - Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
