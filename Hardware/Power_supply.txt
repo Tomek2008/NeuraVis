@@ -1,0 +1,9 @@
+ESP32-S3 
+
+Processor at full load: around 240–350 mA at 3.3V, depending on the workload.
+
+Wi-Fi active (data transmission): During transmission: around 150–200 mA.
+
+Idle state: 80–100 mA.
+
+AVG 280 mA.
