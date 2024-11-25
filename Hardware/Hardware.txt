@@ -3,13 +3,14 @@
 	Dry electrodes are easier to use, while wet electrodes require gel but provide more accuracy.
 
 2.Amplifiers
-
+	
 	EEG signals are very weak (~μV range); low-noise amplifiers are needed to boost the signal.
+	Based on https://www.digikey.pl/en/products/detail/AD620ANZ/AD620ANZ-ND/750967.
 
 3.Filters
 
 	To remove noise (e.g., 50/60 Hz power line interference), bandpass filters are required.
-
+	
 4.Analog-to-Digital Converter (ADC)
 
 	EEG signals are analog, so an ADC is necessary to convert them into digital form for proces sing.
